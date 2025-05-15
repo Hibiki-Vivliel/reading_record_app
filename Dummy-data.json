@@ -1,0 +1,21 @@
+[
+  {
+    "id": "dummy",
+    "title": "吾輩は猫である",
+    "author": "夏目漱石",
+    "publisher": "岩波文庫",
+    "year": 1905,
+    "pageCount": 412,
+    "isbn": "9784003101018",
+    "purchaseDate": "2024-01-10",
+    "classificationCode": "文庫",
+    "classificationNumber": "No.00",
+    "seriesCode": "Iwanami-Bunko-Blue",
+    "location": "自室の本棚",
+    "startDate": "2024-04-01",
+    "endDate": "2024-04-10",
+    "notes": "読みやすかったが語彙が難しい",
+    "reflection": "明治の文学の奥深さを感じた",
+    "imageURL": "https://example.com/book1.jpg"
+  }
+]

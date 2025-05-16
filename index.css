@@ -1,0 +1,16 @@
+body {
+  /* 背景画像のURLをここに貼ってください ↓ */
+  background-image: url("https://drive.google.com/uc?export=view&id=1EUVgIj8b3zTqBKPAZ2XtQVdjbfP2m7SJ");
+
+  /* 背景画像の表示設定 */
+  background-position: center center;  /* 中央揃え（縦・横） */
+  background-repeat: no-repeat;        /* 繰り返さない */
+  background-attachment: fixed;        /* スクロールしても背景固定 */
+  background-size: cover;              /* 画面いっぱいに表示（左右は切れる） */
+  background-color: #000;              /* 読み込み失敗時の背景色 */
+
+  /* スマホなどでも全体が見えるよう最低限の調整 */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

@@ -14,7 +14,7 @@ body {
 }
 
 .logo-title {
-  width: 200px;         /* 画像の幅を指定（必要に応じて変更してOK） */
+  max-width: 80%;       /* レスポンシブ対応で、画面幅に合わせて縮小 */
   height: auto;         /* 高さは自動調整して縦横比を保つ */
   display: block;       /* インライン要素の余白を消す */
   margin: 0 auto;       /* 中央揃え */

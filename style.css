@@ -14,8 +14,9 @@ body {
 }
 
 .logo-title {
-  display: block;
-  margin: 20px auto;
-  max-width: 80%;
-  height: auto;
+  width: 250px;         /* 画像の幅を指定（必要に応じて変更してOK） */
+  height: auto;         /* 高さは自動調整して縦横比を保つ */
+  display: block;       /* インライン要素の余白を消す */
+  margin: 0 auto;       /* 中央揃え */
+  padding-top: 20px;    /* 上の余白（必要なら） */
 }

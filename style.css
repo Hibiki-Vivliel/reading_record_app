@@ -17,21 +17,28 @@ body {
   position: fixed;
   bottom: 20px;              /* 下からの距離 */
   right: 20px;               /* 右からの距離 */
-  width: 60px;
-  height: 60px;
-  background-color: #1a90ff;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(circle at 30% 30%, #64c8ff, #1a90ff); /*内側から外にかけて色をグラデーション（光が当たった水滴感）。*/
   color: white;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   border: none;
   border-radius: 50%;        /* 丸くする */
   text-align: center;
-  line-height: 60px;         /* 垂直方向中央揃え */
+  line-height: 64px;         /* 垂直方向中央揃え */
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 4px 6px rgba(255, 255, 255, 0.4); /* 内側の光沢でバブル感 */
+
   z-index: 1000;
-  transition: background-color 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .add-button:hover {
-  background-color: #006fd6;
+  transform: scale(1.05); /* 少し拡大して浮く */
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.35),
+    inset 0 4px 8px rgba(255, 255, 255, 0.5);
+  background: radial-gradient(circle at 30% 30%, #7fdfff, #0075d1);
 }

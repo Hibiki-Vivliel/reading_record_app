@@ -23,7 +23,7 @@ header {
 
 .logo-title {
   /*max-width: 80vw;       /* レスポンシブ対応で、画面幅に合わせて縮小 */
-  width: 100px;
+  width: auto;
   /*height: auto;         /* 高さは自動調整して縦横比を保つ */
   max-height: 80vw;
   display: block;       /* インライン要素の余白を消す */

@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
       customID: form.elements["idNumber"].value,
       category: form.elements["category"].value,
       shelfInfo: form.elements["location"].value,
+      startDate: form.elements["startDate"].value,
+      endDate: form.elements["endDate"].value,
       summary: form.elements["summary"].value,
       reflection: form.elements["thoughts"].value
     };

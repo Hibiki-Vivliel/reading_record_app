@@ -19,22 +19,23 @@ body {
   right: 20px;               /* 右からの距離 */
   width: 64px;
   height: 64px;
-  /*font-size: 40px;
-  font-weight: bold; */
   border-radius: 50%;        /* 丸くする */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(173, 216, 255, 0.08);
 
-  /* 縁のネオン風ハイライト */
+  /* 💡太めで水色中心のネオン風ボーダー */
   box-shadow:
-    0 0 8px rgba(173, 216, 230, 0.6),
-    0 0 16px rgba(173, 216, 255, 0.4),
-    inset 0 0 6px rgba(255, 255, 255, 0.2);
+    0 0 4px rgba(173, 216, 255, 0.4),
+    0 0 10px rgba(173, 216, 255, 0.6),
+    0 0 20px rgba(100, 200, 255, 0.7),
+    0 0 40px rgba(80, 180, 255, 0.5),
+    inset 0 0 6px rgba(255, 255, 255, 0.15);
 
   color: white;
-  font-size: 28px;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
   line-height: 64px;
   text-decoration: none;
@@ -45,7 +46,9 @@ body {
 .add-button:hover {
   transform: scale(1.1); /* 少し拡大して浮く */
   box-shadow:
-     0 0 12px rgba(173, 216, 255, 0.9),
-    0 0 24px rgba(173, 216, 255, 0.6),
-    inset 0 0 8px rgba(255, 255, 255, 0.3);
+    0 0 8px rgba(173, 216, 255, 0.6),
+    0 0 16px rgba(100, 200, 255, 0.8),
+    0 0 32px rgba(80, 180, 255, 0.6),
+    0 0 64px rgba(60, 160, 255, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
 }

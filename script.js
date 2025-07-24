@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>読書期間: ${book.startDate || "??"} ～ ${book.endDate || "??"}</p>
       <p><strong>あらすじ:</strong> ${book.summary || "なし"}</p>
       <p><strong>感想:</strong> ${book.reflection || "なし"}</p>
-      ${book.imageURL ? `<img src="${book.imageURL}" alt="${book.title}" width="150">` : ''}
+      ${book.imageURL ? `<img src="${book.imageURL}" alt="${book.title}" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3); margin-top: 10px;">` : ''}
       <hr />
     `;
     bookList.appendChild(bookDiv);

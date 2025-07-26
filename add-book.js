@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
   try {
-      const response = await fetch("★ここにGASのWebアプリURLを入れる★", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwbwnMy0_BS4mdGDJj8f6rJBlg1cF5BLpTFisEidWLNoyYUvKG2UlZTuzB15lFJRToL/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },

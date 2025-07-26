@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   try {
       const response = await fetch("https://script.google.com/macros/s/AKfycbwbwnMy0_BS4mdGDJj8f6rJBlg1cF5BLpTFisEidWLNoyYUvKG2UlZTuzB15lFJRToL/exechttps://script.google.com/macros/s/AKfycbwJ3sb5rnPsPrA7gcwIfBM-3TbOIxVDVoe7xOXpKRipGwvKT78rtvE__89Zy3AyiMF7/exec", {
         method: "POST",
-        mode: "no-cors",
+        /*mode: "no-cors",*/
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(book)
       });

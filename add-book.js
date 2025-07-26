@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // ✅ ここにステップ3でコピーしたWebアプリのURLを入れてね！
-      const scriptURL = "<<<ここにWebアプリのURL>>>";
+      const scriptURL = "<<<https://script.google.com/macros/s/AKfycbwbwnMy0_BS4mdGDJj8f6rJBlg1cF5BLpTFisEidWLNoyYUvKG2UlZTuzB15lFJRToL/exec>>>";
 
       const response = await fetch(scriptURL, {
         method: "POST",

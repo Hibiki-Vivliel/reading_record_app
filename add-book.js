@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
       title: form.elements["title"].value,
       author: form.elements["author"].value,
       publisher: form.elements["publisher"].value,
-      label: form.elements["label"]?.value || "",   // 新しい「label」対応
+      label: form.elements["label"].value,   // 新しい「label」対応
       isbn: form.elements["isbn"].value,
       imageURL: form.elements["cover"].value,
 
       purchaseDate: form.elements["purchaseDate"].value,
       customID: form.elements["idNumber"].value,
       category: form.elements["category"].value,
-      categoryID: form.elements["categoryID"]?.value || "",  // 新しい「categoryID」対応
+      categoryID: form.elements["categoryID"].value,  // 新しい「categoryID」対応
       shelfInfo: form.elements["location"].value,
       startDate: form.elements["startDate"].value,
       endDate: form.elements["endDate"].value,
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
   try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwJ3sb5rnPsPrA7gcwIfBM-3TbOIxVDVoe7xOXpKRipGwvKT78rtvE__89Zy3AyiMF7/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwnBhv4s0MjBaWn7TmFzZWmxwhvKu2wZw8hyzgYqtVsLrp46iaLk6X8Q8UeHASzvsVc/exec", {
 
         method: "POST",
         /*mode: "no-cors",*/

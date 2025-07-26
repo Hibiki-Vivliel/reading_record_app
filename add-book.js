@@ -24,28 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
       reflection: form.elements["thoughts"].value
     };
 
-    try {
-      // ✅ ここにステップ3でコピーしたWebアプリのURLを入れてね！
-      const scriptURL = "<<<https://script.google.com/macros/s/AKfycbwbwnMy0_BS4mdGDJj8f6rJBlg1cF5BLpTFisEidWLNoyYUvKG2UlZTuzB15lFJRToL/exec>>>";
-
-      const response = await fetch(scriptURL, {
+  try {
+      const response = await fetch("★ここにGASのWebアプリURLを入れる★", {
         method: "POST",
-        body: JSON.stringify(book),
-        headers: {
-          "Content-Type": "application/json",
-        },
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(book)
       });
 
-      if (response.ok) {
-        alert("📚 本がGoogleスプレッドシートに保存されました！");
-        form.reset();
-        window.location.href = "index.html";
-      } else {
-        alert("⚠️ 保存に失敗しました。");
-      }
+      alert("本がGoogleスプレッドシートに保存されました！");
+      form.reset();
+      window.location.href = "index.html";
     } catch (error) {
-      console.error("Error:", error);
-      alert("⚠️ エラーが発生しました。");
+      console.error("送信エラー:", error);
+      alert("エラーが発生しました。もう一度試してください。");
     }
   });
 });

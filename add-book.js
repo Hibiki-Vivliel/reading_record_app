@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const urlEncodedData = new URLSearchParams(book).toString();
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzlQHQr_ZKYmw9nwI-Uhcoc67rJeIGiZgtcksp6kk4bOmn4wCS2MGkf8gQirD78ia2c/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwQCsfD1hH1JtqY23Vt4NM2qL2naVlMEXxk8K2C5HPLBfqq37DuvGvPPU8H_okW_0mp/exec", {
         method: "POST",
         // headers: { "Content-Type": "application/json" }, // 💡 この行を削除します
         body: urlEncodedData // 💡 JSON.stringify(book) ではなく、URLSearchParams の文字列を送信します

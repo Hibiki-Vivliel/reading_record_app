@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // 💡 GASでデプロイしたGETリクエスト用のURLに置き換えてください
-    const gasUrl = "https://script.google.com/macros/s/AKfycbyVgGEtrUMXs4uR5RRUeJuIzm_Onu5L5yJwVlQafLsD8NfOiINgjcAoqAnSob3qquzs/exec"; // このURLをGET用のものに置き換える
+    const gasUrl = "https://script.google.com/macros/s/AKfycbzpeyElnEZLaIPopkQ-gbjdgFvq17C44KtrA20eiUG5fQ4ifQZie0dXDF7nNLrb5aYA/exec"; // このURLをGET用のものに置き換える
 
     const response = await fetch(gasUrl, {
       method: "GET", // GETメソッドでリクエスト

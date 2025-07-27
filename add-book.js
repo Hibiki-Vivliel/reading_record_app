@@ -24,26 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
       reflection: form.elements["thoughts"].value
     };
 
-    // 💡 修正点: Content-Type ヘッダーを削除し、body の形式を変更します
-    // URLSearchParams を使って x-www-form-urlencoded 形式で送信します
     const urlEncodedData = new URLSearchParams(book).toString();
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwQCsfD1hH1JtqY23Vt4NM2qL2naVlMEXxk8K2C5HPLBfqq37DuvGvPPU8H_okW_0mp/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycby3Ik5GhZvFCQ-wNzuh5nIBX_jTpzp9h29GNsiZzRTT_1IMJBzWvElx2fBBoxZzIsL9/exec", {
         method: "POST",
-        // headers: { "Content-Type": "application/json" }, // 💡 この行を削除します
-        body: urlEncodedData // 💡 JSON.stringify(book) ではなく、URLSearchParams の文字列を送信します
+        // 💡 修正点: mode: 'no-cors' を再度有効にします
+        // ヘッダーは引き続き不要です (URLSearchParams を使っているため)
+        mode: "no-cors", 
+        body: urlEncodedData
       });
 
-      // レスポンスの確認（GAS側でContentService.MimeType.JSONを返しているので、そのままJSONとしてパースできます）
-      const result = await response.json();
-      if (result.status === "ok") {
-        alert("本がGoogleスプレッドシートに保存されました！");
-        form.reset();
-        window.location.href = "index.html";
-      } else {
-        throw new Error("GASからの応答に問題がありました: " + JSON.stringify(result));
-      }
+      // 💡 修正点: no-cors モードではレスポンス内容を読み取れないため、
+      // ここで response.json() などの処理は行いません。
+      // GAS側でリダイレクトを処理するため、ここでは単に成功メッセージを表示し、フォームをリセットします。
+      // 実際のリダイレクトはGAS側で行われます。
+      alert("本を保存しようとしています..."); // 保存確認はGASのリダイレクト後になる
+      form.reset();
+      // window.location.href = "index.html"; // ここでのリダイレクトは不要、GASが処理する
 
     } catch (error) {
       console.error("送信エラー:", error);

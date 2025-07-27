@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (bookListDiv) { // データを表示する要素が存在する場合のみ実行
     try {
       // 💡 GASでデプロイしたGETリクエスト用のURLに置き換えてください
-      const gasGetUrl = "https://script.google.com/macros/s/AKfycbzxf5_HnfX4rttKw1TcKopIemVtdB405tKckntIj7ZjfzgYGw3T238ib8DksJvWa9nu/exec"; // GASのGET用URL
+      const gasGetUrl = "https://script.google.com/macros/s/AKfycbxHSRLx6Ab3J5cVjw9ILo3CY5c5bPTbiu3P1gyGuLJcQPAfOQ7i3Xv5hoT4DzJqPD-G/exec"; // GASのGET用URL
 
       const response = await fetch(gasGetUrl, {
         method: "GET", // GETメソッドでリクエスト

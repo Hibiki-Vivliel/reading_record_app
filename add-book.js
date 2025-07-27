@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       startDate: form.elements["startDate"].value,
       endDate: form.elements["endDate"].value,
       summary: form.elements["summary"].value,
-      reflection: form.elements["thoughts"].value
+      reflection: form.elements["reflection"].value
     };
 
     try {

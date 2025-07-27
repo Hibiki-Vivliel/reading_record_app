@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycby2TtQSIfus7BoLQJUQP49zyWta8O3WdyBjjNlR5yK685pZD2kA4cenqU8jHvvRlmIz/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxjGKr1X4MFhNa934D7bO7q2fFxYpCR-EddZBh4TF1Dx8jlPIaO5iglSKPiUMkMsge7/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },

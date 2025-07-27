@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
       publisher: form.elements["publisher"].value,
       label: form.elements["label"].value,
       isbn: form.elements["isbn"].value,
-      imageURL: form.elements["cover"].value,  // name="cover" を imageURL にマッピング
+      imageURL: form.elements["imageURL"].value,  // name="cover" を imageURL にマッピング
 
       purchaseDate: form.elements["purchaseDate"].value,
       customID: form.elements["idNumber"].value,
       category: form.elements["category"].value,
       categoryID: form.elements["categoryID"].value,
-      shelfInfo: form.elements["location"].value,
+      shelfInfo: form.elements["shelfInfo].value,
       startDate: form.elements["startDate"].value,
       endDate: form.elements["endDate"].value,
       summary: form.elements["summary"].value,

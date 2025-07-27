@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bookList = document.getElementById('bookList');
 
   // ✅ ここにあなたの Web アプリ URL を入れる（/exec まで）
-  const SHEET_URL = "https://script.google.com/macros/s/AKfycbzaUGj7avogCrdjWHpPC3PH9GTOS2C8Y6GXAwgK-1kVUDfXQ81fUQPNL3tyg8nc_Sph/exec";
+  const SHEET_URL = "https://script.google.com/macros/s/AKfycbwFb8khxqpOm-DjqyzW4g2ivQEUpZo-wWKC-txNwcFwPVF0jmR4rIr5nRZVCL_v6wo7/exec";
 
   fetch(SHEET_URL)
     .then(response => response.json())
